@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Digimon</title>
+</head>
+<body>
+{% block content %}
+{% for digimon in digimons %}
+<article>
+    <div>
+        <div>
+            <h1>{{ digimon.nome }}</h1>
+            <p>Nivel: {{ digimon.nivel }}</p>
+            <p>Atributo: {{ digimon.atributo }}</p>
+            <h2>Perfil</h2>
+            <p>{{ digimon.perfil }}</p>
+        </div>
+    </div>
+</article>
+{% endfor %}
+{% endblock content %}
+</body>
+</html>
