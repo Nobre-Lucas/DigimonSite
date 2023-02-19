@@ -1,10 +1,4 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <title>Digimon</title>
-</head>
-<body>
+{% extends "layout.html" %}
 {% block content %}
 {% for digimon in digimons %}
 <article>
@@ -20,5 +14,3 @@
 </article>
 {% endfor %}
 {% endblock content %}
-</body>
-</html>

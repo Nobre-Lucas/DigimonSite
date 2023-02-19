@@ -19,7 +19,7 @@ digimons = [
 @app.route("/")
 @app.route("/home")
 def home():
-    return "Hello World"
+    return render_template('home.html')
 
 
 @app.route("/digimons")
